@@ -37,7 +37,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Process each address
         for address in solana_addresses:
             # Add /nar before the address
-            modified_address = f"/nar{address}"
+            modified_address = f"/nar {address}"
             
             try:
                 # Send to destination chat
