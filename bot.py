@@ -68,7 +68,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await asyncio.sleep(1)
                 
                 # Send /soc message
-                soc_message = f"/soc {address}"
+                soc_message = f"/soc AAA {address}"
                 
                 soc_result = await context.bot.send_message(
                     chat_id=DESTINATION_CHAT_ID,
